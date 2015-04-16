@@ -1,0 +1,43 @@
+<head>
+  <!--Load the Google Charts code. This is important! -->
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load('visualization', '1.0', {'packages':['corechart']});
+    $(function() {
+      Dashing.numColumns = 5
+    });
+  </script>
+</head>
+
+
+
+<div class="gridster">
+  <ul>    
+    
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="google_charts_demo" data-view="GoogleChart" data-charttype='PieChart' data-title="Pie Chart" data-moreinfo="All these tiles use the same data" style="background-color:#47bbb3;"></div>
+    </li>
+    
+    
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="google_charts_demo" data-view="GoogleChart" data-charttype='ColumnChart' data-title="Column Chart" data-moreinfo="Switch chart type by changing the data-charttype html attribute"  style="background-color:#ff9618;"></div>
+    </li>    
+    
+    
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="google_charts_demo" data-view="GoogleChart" data-charttype='AreaChart' data-title="Area Chart" data-moreinfo="All the power of Google Charts in a widget"  style="background-color:#96bf48;"></div>
+    </li>
+    
+    
+    <li data-row="1" data-col="1" data-sizex="5" data-sizey="1">
+      <div data-id="google_charts_demo" data-view="GoogleChart" data-charttype='ColumnChart' data-title="Scaling Example" data-moreinfo="Everything scales automatically based on tile and font size"  style="background-color:#9c4274;"></div>
+    </li>
+    
+    
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="google_charts_demo" data-view="GoogleChart" data-charttype='ColumnChart' data-title="Options Example" data-moreinfo="Configure any chart option by changing the data-options html attribute" data-options='/{"colors": ["#ccc"], "hAxis": { "textStyle": { "italic": true } } }' style="background-color:#dc5945;"></div>
+    </li>
+    
+  </ul>
+</div>
+
