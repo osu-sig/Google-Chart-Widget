@@ -22,7 +22,7 @@ The Google Charts widget is, as the name implies, Google Charts in widget form. 
 
 ## What charts are supported?
 
-This widget currently supports the Pie, Column, and Area chart types. For these types, I have supplied default configurations that resize chart elements to fit nicely on standard Dashing tiles. Other chart types will probably draw but might look weird. 
+This widget currently supports the Pie, Column, and Area chart types. For these types, I have supplied default configurations that resize chart elements to fit nicely on standard Dashing tiles.
 
 
 ## How do I use it?
