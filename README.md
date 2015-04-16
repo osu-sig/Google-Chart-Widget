@@ -15,8 +15,6 @@ Google Chart
 
 ## What is it?
 
-Do you hate the rigidity of the existing Dashing charts/graphs? Do you love Google Charts but don't want to spend effort making it play nice with Dashing? Look no further! I have already done the work for you!
-
 The Google Charts widget is, as the name implies, Google Charts in widget form. It has all the same customization options and capabilities as Google Charts. 
 
 
@@ -27,7 +25,7 @@ This widget currently supports the Pie, Column, and Area chart types. For these 
 
 ## How do I use it?
 
-See demo job and dashboard for examples. In your job, just send formatted JSON data your desired dashboard tiles. On the dashboard, you specify what kind of chart a given tile should by by setting  the 'data-charttype' html attribute to either 'ColumnChart', 'PieChart', or 'AreaChart' (data-charttype='ColumnChart'). That's it!
+See demo job and dashboard for examples. In the job, you send formatted JSON data to your desired dashboard tiles. In the dashboard, you specify what kind of chart a given tile should be by setting  the 'data-charttype' html attribute to either 'ColumnChart', 'PieChart', or 'AreaChart' (data-charttype='ColumnChart'). That's it!
 
 
 ## How do I customize my chart?
