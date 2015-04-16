@@ -1,35 +1,38 @@
 ---
-title: Barista
-description: An awesome bar graph widget for Dashing
+title: Google Chart
+description: Google Charts shrunk into widget form
 author: Michael Woffendin
-tags: bar, widget, dashing, graph, bar graph
-created:  2014 Mar 13
-modified: 2014 Mar 13
+tags:  widget, dashing, chart, google, graph, bar, area, pie
+created:  2015 April 16
+modified: 2015 April 16
 
 ---
 
-Barista
+Google Chart
 =========
 
-![alt tag](https://raw.github.com/osu-sig/Bar-Widget/master/bar_widget_screenshot.png)
+![alt tag](https://raw.github.com/osu-sig/Google-Chart-Widget/master/screenshot.png)
 
 ## What is it?
 
-Sick of pie charts? Here's something different! View proportionality of multiple values within a set, or view utilization within different sets with Barista!
+Do you hate the rigidity of the existing Dashing charts/graphs? Do you love Google Charts but don't want to spend effort making it play nice with Dashing? Look no further! I have already done the work for you!
 
-No more messing around with Javascript for styling. Everything from the color palate to the size of the graphs is determined by CSS. Just supply some simple rules and Barista will do the rest. If you are the kind of person who gets annoyed by 1px offset, Barista has built-in classes that enable easy fine-tuning.
+The Google Charts widget is, as the name implies, Google Charts in widget form. It has all the same customization options and capabilities as Google Charts. 
 
-Flexible! Want one graph per tile? Easy. Want multiple graphs per tile? Still easy! Want massive graphs on a 5-column wide tile? Barista can do it! Just give it data and maybe do some CSS tweaking.
+
+## What charts are supported?
+
+This widget currently supports the Pie, Column, and Area chart types. For these types, I have supplied default configurations that resize chart elements to fit nicely on standard Dashing tiles. Other chart types will probably draw but might look weird. 
+
 
 ## How do I use it?
 
-There are two ways to use Barista: comparing values within a series, and comparing a single series value to a maximum. Look at the demo job to get an idea of what data you'll need to send. 
+See demo job and dashboard for examples. In your job, just send formatted JSON data your desired dashboard tiles. On the dashboard, you specify what kind of chart a given tile should by by setting  the 'data-charttype' html attribute to either 'ColumnChart', 'PieChart', or 'AreaChart' (data-charttype='ColumnChart'). That's it!
 
-Make sure that the tile has a background-color and font-size set, as Bar uses those when drawing the graphs. You may want to just modify the supplied bar.scss to meet your needs. 
 
-## What are the options?
+## How do I customize my chart?
 
-Each of these options should be supplied as a key-value pair inside a series.
-* hide_percentages : Hides percentages being drawn inside the bars. Boolean
-* hide_total : For multiple value series, hides the total above the graph. Boolean
-* max_value : Must be supplied if using single value series. Must be larger than the value's value. Should be an integer (can have units though)
+All options supported by Google Charts are also supported by this widget. See the last tile on the demo dashboard for an example. On the tile you wish to customize, set the 'data-options' html attribute to a JSON attribute string (data-options='/{"colors": ["#ccc"]}'). PLEASE NOTE the following about the options:
+* Your JSON string MUST start with a / before the opening {. Otherwise it will not parse correctly. This happens because Dashing automatically parses valid JSON attributes, making them unreadable for the widget. The / invalidates the JSON string and prevents this from happening. 
+* Your JSON string MUST use single quotes ' for the outermost quotations and double quotes " for inner quotations. Otherwise it will not parse correctly.
+
